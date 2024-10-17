@@ -7,7 +7,7 @@ fetch(`${api}?results=${result}`)
   .then((data) => {
     users = data.results;
     display(users);
-    document.getElementById("loading").style.display = "none";
+    document.getElementById('cards').classList.remove("d-none");
 
     // console.log(data);
   })
